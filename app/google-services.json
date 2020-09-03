@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "171972878500",
+    "firebase_url": "https://fracgoal-8c9ca.firebaseio.com",
+    "project_id": "fracgoal-8c9ca",
+    "storage_bucket": "fracgoal-8c9ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171972878500:android:232df42ef0e17508710631",
+        "android_client_info": {
+          "package_name": "com.mmu.fracgoal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171972878500-g9k55okte538e6ep4rp0bmngj1dho2us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mmu.fracgoal",
+            "certificate_hash": "cedea337a5fa26cd10ae90d3ac479535c73f6a23"
+          }
+        },
+        {
+          "client_id": "171972878500-rqb1dkkr6tsuk61mhhdemorc0rnv0vmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjiS97pJbIxSpxiVsM6JS4fIxPQZqvu98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171972878500-rqb1dkkr6tsuk61mhhdemorc0rnv0vmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -51,6 +51,7 @@ public class Menu extends AppCompatActivity {
         mSettingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Setting.class));
             }
         });
 

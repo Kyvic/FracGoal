@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mmu.fracgoal">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -13,18 +15,23 @@
         <activity android:name="com.mmu.fracgoal.Register"/>
         <activity android:name="com.mmu.fracgoal.Login"/>
 
-        <activity android:name="com.mmu.fracgoal.Main">
+        <activity android:name="com.mmu.fracgoal.Setting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.mmu.fracgoal.Menu"/>
+
         <activity android:name="com.mmu.fracgoal.Profile" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <activity android:name="com.mmu.fracgoal.TeacherReference"/>
+        <activity android:name="com.mmu.fracgoal.UploadMaterial"/>
+        <activity android:name="com.mmu.fracgoal.Main"/>
+
+
     </application>
 
 </manifest>

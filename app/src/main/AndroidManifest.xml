@@ -15,7 +15,7 @@
         <activity android:name="com.mmu.fracgoal.Register"/>
         <activity android:name="com.mmu.fracgoal.Login"/>
 
-        <activity android:name="com.mmu.fracgoal.Setting">
+        <activity android:name="com.mmu.fracgoal.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -29,7 +29,7 @@
             android:resource="@array/preloaded_fonts" />
         <activity android:name="com.mmu.fracgoal.TeacherReference"/>
         <activity android:name="com.mmu.fracgoal.UploadMaterial"/>
-        <activity android:name="com.mmu.fracgoal.Main"/>
+        <activity android:name="com.mmu.fracgoal.Setting"/>
 
 
     </application>

@@ -151,6 +151,4 @@ public class UploadMaterial extends AppCompatActivity {
         intent.setAction(Intent.ACTION_GET_CONTENT); // to fetch files
         startActivityForResult(intent, 86);
     }
-
-
 }

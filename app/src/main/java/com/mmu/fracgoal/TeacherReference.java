@@ -26,14 +26,13 @@ public class TeacherReference extends AppCompatActivity {
         mUploadVideoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), UploadMaterial.class));
             }
         });
 
         mUploadLearningMaterialBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(getApplicationContext(), UploadLearningMaterial.class));
+                startActivity(new Intent(getApplicationContext(), UploadMaterial.class));
             }
         });
     }

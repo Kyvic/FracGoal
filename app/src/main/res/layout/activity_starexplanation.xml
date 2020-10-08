@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggame"
+    tools:context="com.mmu.fracgoal.StarExplanation">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Explanation"
+        android:textColor="#E8719B"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/easyExplanation"
+        android:layout_width="234dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="96dp"
+        android:background="#E3B0B0"
+        android:fontFamily="@font/carter_one"
+        android:text="Game Easy"
+        android:textColor="#020202"
+        android:textSize="32sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/moderateExplanation"
+        android:layout_width="234dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:background="#E3B0B0"
+        android:fontFamily="@font/carter_one"
+        android:text="Game Moderate"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyExplanation" />
+
+    <Button
+        android:id="@+id/hardExplanation"
+        android:layout_width="234dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:background="#E3B0B0"
+        android:fontFamily="@font/carter_one"
+        android:text="Game Hard"
+        android:textColor="#020202"
+        android:textSize="32sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moderateExplanation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

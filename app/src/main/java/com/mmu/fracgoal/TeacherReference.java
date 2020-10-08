@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TeacherReference extends AppCompatActivity {
     public static final String TAG = "TAG";
-    Button mUploadVideoBtn, mUploadLearningMaterialBtn;
+    Button mUploadVideoBtn, mUploadLearningMaterialBtn, mStarExp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class TeacherReference extends AppCompatActivity {
 
         mUploadVideoBtn = findViewById(R.id.uploadVideoBtn);
         mUploadLearningMaterialBtn = findViewById(R.id.uploadLearningMaterialBtn);
+        mStarExp = findViewById(R.id.starExpBtn);
 
 
         mUploadVideoBtn.setOnClickListener(new View.OnClickListener() {
@@ -33,6 +34,13 @@ public class TeacherReference extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), UploadMaterial.class));
+            }
+        });
+
+        mStarExp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), StarExplanation.class));
             }
         });
     }

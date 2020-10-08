@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.mmu.fracgoal.Menu">
+    tools:context="com.mmu.fracgoal.GameMenu">
 
     <Button
-        android:id="@+id/accountPgBtn"
+        android:id="@+id/easyPgBtn"
         android:layout_width="161dp"
         android:layout_height="102dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
-        android:text="Account"
+        android:text="Easy"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,30 +22,30 @@
         app:layout_constraintVertical_bias="0.32999998" />
 
     <Button
-        android:id="@+id/gamePgBtn"
+        android:id="@+id/moderatePgBtn"
         android:layout_width="161dp"
         android:layout_height="102dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
-        android:text="Game"
+        android:text="Moderate"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountPgBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/easyPgBtn" />
 
     <Button
-        android:id="@+id/referencePgBtn"
+        android:id="@+id/hardPgBtn"
         android:layout_width="161dp"
         android:layout_height="102dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
-        android:text="Reference"
+        android:text="Hard"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gamePgBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/moderatePgBtn" />
 
     <TextView
         android:id="@+id/textView1"
@@ -55,26 +55,14 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="56dp"
         android:fontFamily="@font/aclonica"
-        android:text="Home"
+        android:text="Game"
         android:textColor="#000000"
         android:textSize="56sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/settingBtn"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/setting" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/easyExplanation"
+        android:id="@+id/btnEasyExplanation"
         android:layout_width="234dp"
         android:layout_height="70dp"
         android:layout_marginTop="96dp"
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <Button
-        android:id="@+id/moderateExplanation"
+        android:id="@+id/btnModerateExplanation"
         android:layout_width="234dp"
         android:layout_height="70dp"
         android:layout_marginTop="72dp"
@@ -53,10 +53,10 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/easyExplanation" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEasyExplanation" />
 
     <Button
-        android:id="@+id/hardExplanation"
+        android:id="@+id/btnHardExplanation"
         android:layout_width="234dp"
         android:layout_height="70dp"
         android:layout_marginTop="72dp"
@@ -68,6 +68,6 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moderateExplanation" />
+        app:layout_constraintTop_toBottomOf="@+id/btnModerateExplanation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

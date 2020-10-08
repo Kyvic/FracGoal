@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ModerateExplanation extends AppCompatActivity {
     public static final String TAG = "TAG";
-    Button mContinue;
     ImageView mStar;
     private static boolean moderateExpStar;
 
@@ -20,15 +19,7 @@ public class ModerateExplanation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moderateexplanation);
 
-        mContinue = findViewById(R.id.continueBtn2);
         mStar = findViewById(R.id.starImage2);
-
-        mContinue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), GameMenu.class));
-            }
-        });
 
         mStar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,9 +32,7 @@ public class ModerateExplanation extends AppCompatActivity {
         });
     }
 
-    public static void setModerateExpStar(){
-        moderateExpStar = true;
-    }
+    public static void setModerateExpStar(){ moderateExpStar = true; }
 
     public static boolean getModerateExpStar(){
         return moderateExpStar;

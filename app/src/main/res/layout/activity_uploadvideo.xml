@@ -6,38 +6,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/selectFile"
-        android:layout_width="136dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="176dp"
-        android:text="SELECT FILE"
-        app:layout_constraintBottom_toTopOf="@+id/upload"
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/video_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/upload"
-        android:layout_width="131dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="136dp"
-        android:text="UPLOAD"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/video_name"
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:hint="Video name"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/choose_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/notification"
+    <Button
+        android:id="@+id/choose_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No file is selected"
-        app:layout_constraintBottom_toTopOf="@+id/upload"
+        android:layout_marginBottom="24dp"
+        android:text="SELECT VIDEO"
+        app:layout_constraintBottom_toTopOf="@+id/upload_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectFile"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="UPLOAD VIDEO"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

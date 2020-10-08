@@ -5,69 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.mmu.fracgoal.TeacherReference">
+    tools:context="com.mmu.fracgoal.StudentReference">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/aclonica"
         android:text="Reference"
         android:textColor="#000000"
         android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/uploadVideoBtn"
-        android:layout_width="206dp"
-        android:layout_height="127dp"
+        android:id="@+id/videoBtn"
+        android:layout_width="161dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/button__1_"
+        android:fontFamily="@font/aclonica"
+        android:text="      Video"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/materialBtn"
+        android:layout_width="161dp"
+        android:layout_height="102dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
-        android:text="      Upload Video"
+        android:text="Learning Material"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/videoBtn" />
 
     <Button
-        android:id="@+id/uploadLearningMaterialBtn"
-        android:layout_width="200dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/explainBtn"
+        android:layout_width="161dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
-        android:text="Upload Learning Material"
-        android:textAllCaps="true"
+        android:text="      Stared Explanation"
         android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uploadVideoBtn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/starExpBtn"
-        android:layout_width="200dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="156dp"
-        android:background="@drawable/button__1_"
-        android:fontFamily="@font/aclonica"
-        android:text="Star Explanation"
-        android:textAllCaps="true"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uploadLearningMaterialBtn"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/materialBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

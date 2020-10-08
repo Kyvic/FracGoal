@@ -12,8 +12,8 @@ public class GameMenu extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mEasyBtn, mModerateBtn, mHardBtn;
     boolean easySts = false;
-    private WinGame1 model1 = new WinGame1();
-    private WinGame2 model2 = new WinGame2();
+    private EasyGame model1 = new EasyGame();
+    private ModerateGame model2 = new ModerateGame();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

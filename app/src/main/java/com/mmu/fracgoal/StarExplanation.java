@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class StarExplanation extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mEasyExp, mModerateExp, mHardExp;
-    ImageView mStarModerate;
     private EasyExplanation exp1 = new EasyExplanation();
     private ModerateExplanation exp2 = new ModerateExplanation();
     private HardExplanation exp3 = new HardExplanation();
@@ -23,9 +22,9 @@ public class StarExplanation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starexplanation);
 
-        mEasyExp = findViewById(R.id.easyExplanation);
-        mModerateExp = findViewById(R.id.moderateExplanation);
-        mHardExp = findViewById(R.id.hardExplanation);
+        mEasyExp = findViewById(R.id.btnEasyExplanation);
+        mModerateExp = findViewById(R.id.btnModerateExplanation);
+        mHardExp = findViewById(R.id.btnHardExplanation);
 
         mEasyExp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +45,7 @@ public class StarExplanation extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), ModerateExplanation.class));
                 }
                 else{
-                    Toast.makeText(StarExplanation.this,"No starred the explanation of easy game.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StarExplanation.this,"No starred the explanation of moderate game.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -58,7 +57,7 @@ public class StarExplanation extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), HardExplanation.class));
                 }
                 else{
-                    Toast.makeText(StarExplanation.this,"No starred the explanation of easy game.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StarExplanation.this,"No starred the explanation of hard game.", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -32,7 +32,7 @@ public class Menu extends AppCompatActivity {
         mAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Profile.class));
+                startActivity(new Intent(getApplicationContext(), Account.class));
             }
         });
 
@@ -46,7 +46,7 @@ public class Menu extends AppCompatActivity {
         mReferenceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), TeacherReference.class));
+                startActivity(new Intent(getApplicationContext(), StudentReference.class));
             }
         });
 

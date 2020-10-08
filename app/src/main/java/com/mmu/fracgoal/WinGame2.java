@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WinGame2 extends AppCompatActivity {
     public static final String TAG = "TAG";
-    private static boolean moderateGameState;
     Button mContinue;
 
     @Override
@@ -21,20 +20,9 @@ public class WinGame2 extends AppCompatActivity {
         mContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mContinue.hasOnClickListeners()) {
-                    setModerateGameState();
-                    startActivity(new Intent(getApplicationContext(), GameMenu.class));
-                }
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
             }
         });
-    }
-
-    public static void setModerateGameState(){
-        moderateGameState = true;
-    }
-
-    public static boolean getModerateGameState(){
-        return moderateGameState;
     }
 }
 

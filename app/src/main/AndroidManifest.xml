@@ -23,8 +23,23 @@
         </activity>
 
         <activity android:name="com.mmu.fracgoal.Menu"/>
+        <activity android:name="com.mmu.fracgoal.Account"/>
+        <activity android:name="com.mmu.fracgoal.StudentReference"/>
+        <activity android:name="com.mmu.fracgoal.SearchLearningMaterial"/>
+        <activity android:name="com.mmu.fracgoal.TeacherMenu"/>
         <activity android:name="com.mmu.fracgoal.Profile" />
+        <activity android:name="com.mmu.fracgoal.LearningProgress"/>
         <activity android:name="com.mmu.fracgoal.GameMenu"/>
+        <activity android:name="com.mmu.fracgoal.TeacherReference"/>
+        <activity android:name="com.mmu.fracgoal.Setting"/>
+        <activity android:name="com.mmu.fracgoal.StarExplanation"/>
+        <activity android:name="com.mmu.fracgoal.UploadLearningMaterial"/>
+        <activity android:name="com.mmu.fracgoal.UploadVideo"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <activity android:name="com.mmu.fracgoal.EasyGame"/>
         <activity android:name="com.mmu.fracgoal.WinGame1"/>
         <activity android:name="com.mmu.fracgoal.EasyExplanation"/>
@@ -34,14 +49,7 @@
         <activity android:name="com.mmu.fracgoal.HardGame"/>
         <activity android:name="com.mmu.fracgoal.WinGame3"/>
         <activity android:name="com.mmu.fracgoal.HardExplanation"/>
-        <activity android:name="com.mmu.fracgoal.TeacherReference"/>
-        <activity android:name="com.mmu.fracgoal.UploadMaterial"/>
-        <activity android:name="com.mmu.fracgoal.Setting"/>
-        <activity android:name="com.mmu.fracgoal.StarExplanation"/>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

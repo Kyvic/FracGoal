@@ -13,6 +13,7 @@ public class ModerateGame extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mModerateAns;
     Button mSubmitBtn;
+    private static boolean moderateGameState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +34,22 @@ public class ModerateGame extends AppCompatActivity {
                 }
 
                 else if (ans.equals("45/7")){
+                    setModerateGameState();
                     startActivity(new Intent(getApplicationContext(), WinGame2.class));
                 }
 
                 else{
-                    System.out.println(ans);
                     startActivity(new Intent(getApplicationContext(), ModerateExplanation.class));
                 }
             }
         });
+    }
+    public static void setModerateGameState(){
+        moderateGameState = true;
+    }
+
+    public static boolean getModerateGameState(){
+        return moderateGameState;
     }
 }
 

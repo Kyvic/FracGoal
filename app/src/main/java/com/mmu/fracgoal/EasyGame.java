@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EasyGame extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mEasyAns1, mEasyAns2, mEasyAns3, mEasyAns4;
+    private static boolean easyGameState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +45,18 @@ public class EasyGame extends AppCompatActivity {
         mEasyAns4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                setEasyGameState();
                 startActivity(new Intent(getApplicationContext(), WinGame1.class));
             }
         });
+    }
+
+    public static void setEasyGameState(){
+        easyGameState = true;
+    }
+
+    public static boolean getEasyGameState(){
+        return easyGameState;
     }
 }
 

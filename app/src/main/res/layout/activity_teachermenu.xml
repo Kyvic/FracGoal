@@ -5,50 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.mmu.fracgoal.Menu">
+    tools:context="com.mmu.fracgoal.TeacherMenu">
 
     <Button
         android:id="@+id/accountPgBtn"
-        android:layout_width="161dp"
-        android:layout_height="102dp"
+        android:layout_width="205dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="252dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
         android:text="Account"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998" />
-
-    <Button
-        android:id="@+id/gamePgBtn"
-        android:layout_width="161dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/button__1_"
-        android:fontFamily="@font/aclonica"
-        android:text="Game"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/accountPgBtn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/referencePgBtn"
-        android:layout_width="161dp"
-        android:layout_height="102dp"
+        android:layout_width="205dp"
+        android:layout_height="120dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/button__1_"
         android:fontFamily="@font/aclonica"
         android:text="Reference"
-        android:textSize="15sp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gamePgBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/accountPgBtn"
+        app:layout_constraintVertical_bias="0.159" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

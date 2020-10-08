@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HardExplanation extends AppCompatActivity {
     public static final String TAG = "TAG";
-    Button mEnd;
     ImageView mStar;
     private static boolean hardExpStar;
 
@@ -20,15 +19,8 @@ public class HardExplanation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hardexplanation);
 
-        mEnd = findViewById(R.id.endBtn);
         mStar = findViewById(R.id.starImage3);
 
-        mEnd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), GameMenu.class));
-            }
-        });
 
         mStar.setOnClickListener(new View.OnClickListener() {
             @Override

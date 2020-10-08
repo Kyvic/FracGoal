@@ -43,17 +43,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/star" />
 
-    <Button
-        android:id="@+id/continueBtn2"
-        android:layout_width="208dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/bgbtn"
-        android:fontFamily="@font/aclonica"
-        android:text="Continue"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

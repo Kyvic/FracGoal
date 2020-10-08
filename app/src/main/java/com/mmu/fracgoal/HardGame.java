@@ -13,6 +13,7 @@ public class HardGame extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mHardAns;
     Button mSubmitBtn;
+    private static boolean hardGameState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +34,23 @@ public class HardGame extends AppCompatActivity {
                 }
 
                 else if (ans.equals("3/10") ||ans.equals("0.3")  ){
+                    setHardGameState();
                     startActivity(new Intent(getApplicationContext(), WinGame3.class));
                 }
 
                 else{
-                    System.out.println(ans);
                     startActivity(new Intent(getApplicationContext(), HardExplanation.class));
                 }
             }
         });
+    }
+
+    public static void setHardGameState(){
+        hardGameState = true;
+    }
+
+    public static boolean getHardGameState(){
+        return hardGameState;
     }
 }
 

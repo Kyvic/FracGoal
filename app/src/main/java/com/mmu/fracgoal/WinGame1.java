@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WinGame1 extends AppCompatActivity {
     public static final String TAG = "TAG";
-    private static boolean easyGameState;
     Button mContinue;
 
     @Override
@@ -21,20 +20,9 @@ public class WinGame1 extends AppCompatActivity {
         mContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mContinue.hasOnClickListeners()) {
-                    setEasyGameState();
-                    startActivity(new Intent(getApplicationContext(), GameMenu.class));
-                }
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
             }
         });
-    }
-
-    public static void setEasyGameState(){
-        easyGameState = true;
-    }
-
-    public static boolean getEasyGameState(){
-        return easyGameState;
     }
 }
 

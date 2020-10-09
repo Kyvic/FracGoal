@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -48,7 +49,7 @@ public class UploadVideo extends AppCompatActivity {
     MediaController mediaController;
     StorageReference mStorageRef;
     DatabaseReference mDataBaseRef;
-
+    ImageView mBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,7 @@ public class UploadVideo extends AppCompatActivity {
         videoView = findViewById(R.id.video_view);
         progressBar = findViewById(R.id.progress_bar);
         videoname = findViewById(R.id.video_name);
+        mBack = findViewById(R.id.back15);
 
         mediaController = new MediaController(this);
 
@@ -83,6 +85,13 @@ public class UploadVideo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 uploadVideo();
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), TeacherReference.class));
             }
         });
     }

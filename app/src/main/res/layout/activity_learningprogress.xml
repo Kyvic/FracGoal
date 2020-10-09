@@ -7,13 +7,23 @@
     android:background="@drawable/bggame"
     tools:context="com.mmu.fracgoal.LearningProgress">
 
+    <ImageView
+        android:id="@+id/back7"
+        android:layout_width="76dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="306dp"
         android:layout_height="121dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/aclonica"
         android:text="Learning Progress"
         android:textColor="#E8719B"

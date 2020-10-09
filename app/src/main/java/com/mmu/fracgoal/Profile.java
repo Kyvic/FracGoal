@@ -3,6 +3,7 @@ package com.mmu.fracgoal;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,7 @@ public class Profile extends AppCompatActivity {
     FirebaseAuth fAuth; //to get userID
     FirebaseFirestore fStore; //to retrieve data
     String userId;
+    ImageView mBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -29,6 +31,7 @@ public class Profile extends AppCompatActivity {
         fullName = findViewById(R.id.profileName);
         email = findViewById(R.id.profileEmail);
         phone = findViewById(R.id.profilePhone);
+        mBack = findViewById(R.id.back10);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -42,6 +45,13 @@ public class Profile extends AppCompatActivity {
                 fullName.setText(documentSnapshot.getString("fName"));
                 email.setText(documentSnapshot.getString("email"));
                 phone.setText(documentSnapshot.getString("phone"));
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Account.class));
             }
         });
     }

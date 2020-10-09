@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class StarExplanation extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mEasyExp, mModerateExp, mHardExp;
+    ImageView mBack;
     private EasyExplanation exp1 = new EasyExplanation();
     private ModerateExplanation exp2 = new ModerateExplanation();
     private HardExplanation exp3 = new HardExplanation();
@@ -25,6 +26,7 @@ public class StarExplanation extends AppCompatActivity {
         mEasyExp = findViewById(R.id.btnEasyExplanation);
         mModerateExp = findViewById(R.id.btnModerateExplanation);
         mHardExp = findViewById(R.id.btnHardExplanation);
+        mBack = findViewById(R.id.back11);
 
         mEasyExp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +61,13 @@ public class StarExplanation extends AppCompatActivity {
                 else{
                     Toast.makeText(StarExplanation.this,"No starred the explanation of hard game.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), StudentReference.class));
             }
         });
     }

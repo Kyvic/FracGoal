@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +14,7 @@ public class HardGame extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mHardAns;
     Button mSubmitBtn;
+    ImageView mBack;
     private static boolean hardGameState;
 
     @Override
@@ -22,6 +24,7 @@ public class HardGame extends AppCompatActivity {
 
         mHardAns = findViewById(R.id.editAnsHard);
         mSubmitBtn = findViewById(R.id.submitBtn2);
+        mBack = findViewById(R.id.back6);
 
         mSubmitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +44,13 @@ public class HardGame extends AppCompatActivity {
                 else{
                     startActivity(new Intent(getApplicationContext(), HardExplanation.class));
                 }
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
             }
         });
     }

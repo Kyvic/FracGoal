@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 
-public class Account extends AppCompatActivity {
+public class TeacherAccount extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mProfileBtn, mLProgressBtn;
     ImageView mBack;
@@ -22,11 +22,10 @@ public class Account extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_account);
+        setContentView(R.layout.activity_teacheraccount);
 
-        mProfileBtn = findViewById(R.id.btnProfile);
-        mLProgressBtn = findViewById(R.id.btnLearningProgress);
-        mBack = findViewById(R.id.back1);
+        mProfileBtn = findViewById(R.id.btnProfile1);
+        mBack = findViewById(R.id.back19);
 
         mProfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,17 +34,10 @@ public class Account extends AppCompatActivity {
             }
         });
 
-        mLProgressBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), LearningProgress.class));
-            }
-        });
-
         mBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Menu.class));
+                startActivity(new Intent(getApplicationContext(), TeacherMenu.class));
             }
         });
     }

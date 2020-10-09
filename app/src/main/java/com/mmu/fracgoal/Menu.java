@@ -17,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Menu extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mAccountBtn, mGameBtn, mReferenceBtn;
-    ImageView mSettingBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,6 @@ public class Menu extends AppCompatActivity {
         mAccountBtn = findViewById(R.id.accountPgBtn);
         mGameBtn = findViewById(R.id.gamePgBtn);
         mReferenceBtn = findViewById(R.id.referencePgBtn);
-        mSettingBtn = findViewById(R.id.settingBtn);
 
         mAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,13 +45,6 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), StudentReference.class));
-            }
-        });
-
-        mSettingBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Setting.class));
             }
         });
 

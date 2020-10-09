@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EasyExplanation extends AppCompatActivity {
     public static final String TAG = "TAG";
-    ImageView mStar;
+    ImageView mStar, mBack;
     private static boolean easyExpStar;
 
     @Override
@@ -20,6 +20,7 @@ public class EasyExplanation extends AppCompatActivity {
         setContentView(R.layout.activity_easyexplanation);
 
         mStar = findViewById(R.id.starImage1);
+        mBack = findViewById(R.id.back2);
 
         mStar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,13 @@ public class EasyExplanation extends AppCompatActivity {
                     setEasyExpStar();
                     Toast.makeText(EasyExplanation.this, "Add to star explanation successful", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
             }
         });
     }

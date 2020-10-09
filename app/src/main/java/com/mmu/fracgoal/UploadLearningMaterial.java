@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,7 @@ public class UploadLearningMaterial extends AppCompatActivity {
     Button selectFile, upload;
     TextView notification;
     EditText materialName;
+    ImageView mBack;
     Uri pdfUri; // uri are actually URLs that are meant for local storage
 
     //FirebaseStorage storage; // used for uploadinginf files..Ex : pdf
@@ -56,6 +58,7 @@ public class UploadLearningMaterial extends AppCompatActivity {
         upload = findViewById(R.id.upload);
         notification = findViewById(R.id.notification);
         materialName = findViewById(R.id.materialName);
+        mBack = findViewById(R.id.back14);
 
         selectFile.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -78,6 +81,12 @@ public class UploadLearningMaterial extends AppCompatActivity {
             }
         });
 
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), TeacherReference.class));
+            }
+        });
     }
 
     private void uploadFile(Uri pdfUri) {

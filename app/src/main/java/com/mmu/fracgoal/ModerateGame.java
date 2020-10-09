@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +14,7 @@ public class ModerateGame extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mModerateAns;
     Button mSubmitBtn;
+    ImageView mBack;
     private static boolean moderateGameState;
 
     @Override
@@ -22,6 +24,7 @@ public class ModerateGame extends AppCompatActivity {
 
         mModerateAns = findViewById(R.id.editAnsModerate);
         mSubmitBtn = findViewById(R.id.submitBtn1);
+        mBack = findViewById(R.id.back9);
 
         mSubmitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +44,13 @@ public class ModerateGame extends AppCompatActivity {
                 else{
                     startActivity(new Intent(getApplicationContext(), ModerateExplanation.class));
                 }
+            }
+        });
+
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), GameMenu.class));
             }
         });
     }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GameMenu extends AppCompatActivity {
     public static final String TAG = "TAG";
     Button mEasyBtn, mModerateBtn, mHardBtn;
-    boolean easySts = false;
     private EasyGame model1 = new EasyGame();
     private ModerateGame model2 = new ModerateGame();
+    ImageView mBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class GameMenu extends AppCompatActivity {
         mEasyBtn = findViewById(R.id.easyPgBtn);
         mModerateBtn = findViewById(R.id.moderatePgBtn);
         mHardBtn = findViewById(R.id.hardPgBtn);
+        mBack = findViewById(R.id.back4);
 
         mEasyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,11 @@ public class GameMenu extends AppCompatActivity {
             }
         });
 
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Menu.class));
+            }
+        });
     }
-
 }

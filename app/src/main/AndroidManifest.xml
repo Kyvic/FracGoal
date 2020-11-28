@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mmu.fracgoal">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FracGoal"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mmu.fracgoal.Register"/>
+        <activity android:name="com.mmu.fracgoal.Login"/>
+
+        <activity android:name="com.mmu.fracgoal.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mmu.fracgoal.Menu"/>
+        <activity android:name="com.mmu.fracgoal.Account"/>
+        <activity android:name="com.mmu.fracgoal.StudentReference"/>
+        <activity android:name="com.mmu.fracgoal.SearchLearningMaterial"/>
+        <activity android:name="com.mmu.fracgoal.SearchVideo"/>
+        <activity android:name="com.mmu.fracgoal.PDFViewer"/>
+        <activity android:name="com.mmu.fracgoal.VideoViewer"/>
+        <activity android:name="com.mmu.fracgoal.Profile" />
+        <activity android:name="com.mmu.fracgoal.LearningProgress"/>
+        <activity android:name="com.mmu.fracgoal.GameMenu"/>
+        <activity android:name="com.mmu.fracgoal.StarExplanation"/>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.mmu.fracgoal.EasyGame"/>
+        <activity android:name="com.mmu.fracgoal.WinGame1"/>
+        <activity android:name="com.mmu.fracgoal.EasyExplanation"/>
+        <activity android:name="com.mmu.fracgoal.ModerateGame"/>
+        <activity android:name="com.mmu.fracgoal.WinGame2"/>
+        <activity android:name="com.mmu.fracgoal.ModerateExplanation"/>
+        <activity android:name="com.mmu.fracgoal.HardGame"/>
+        <activity android:name="com.mmu.fracgoal.WinGame3"/>
+        <activity android:name="com.mmu.fracgoal.HardExplanation"/>
+
+    </application>
+
+</manifest>
